@@ -32,6 +32,7 @@ export default function App() {
             <Tab label="Account" {...a11yProps(0)} />
             <Tab label="Storage" {...a11yProps(1)} />
             <Tab label="Greeter" {...a11yProps(2)} />
+            <Tab label="Test" {...a11yProps(3)} />
           </Tabs>
         </Box>
         <TabPanel value={value} index={0}>
@@ -41,6 +42,9 @@ export default function App() {
           <StorageContract contractData={contracts?.Storage} />
         </TabPanel>
         <TabPanel value={value} index={2}>
+          <GreeterContract contractData={contracts?.Greeter} />
+        </TabPanel>
+        <TabPanel value={value} index={3}>
           <GreeterContract contractData={contracts?.Greeter} />
         </TabPanel>
       </Box>
